@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="515.0" prefWidth="672.0" style="-fx-background-color: #9bc1cc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cipher.Controller">
+   <children>
+      <Label fx:id="function" layoutX="30.0" layoutY="76.0" prefHeight="29.0" prefWidth="230.0" text="Choose The Function">
+         <font>
+            <Font name="Sitka Small Bold" size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="choicebox" layoutX="469.0" layoutY="77.0" prefHeight="25.0" prefWidth="122.0" />
+      <Button fx:id="encryptedbutton" layoutX="40.0" layoutY="371.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #625B62;" text="Encrypt">
+         <font>
+            <Font name="Ebrima" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="decryptedbutton" alignment="CENTER" contentDisplay="CENTER" layoutX="439.0" layoutY="371.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="152.0" style="-fx-background-color: #625B62;" text="Decrypt" textAlignment="CENTER">
+         <font>
+            <Font name="Tahoma" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="encryptedlabel" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="435.0" prefHeight="36.0" prefWidth="257.0" style="-fx-background-color: #d1c9c9;" textAlignment="CENTER">
+         <effect>
+            <Reflection>
+               <input>
+                  <Reflection />
+               </input>
+            </Reflection>
+         </effect>
+      </Label>
+      <TextField fx:id="tx1" alignment="BOTTOM_CENTER" layoutX="138.0" layoutY="191.0" prefHeight="36.0" prefWidth="331.0" promptText="Enter Ur MSG" style="-fx-background-color: #d1c9c9;">
+         <font>
+            <Font name="Rockwell" size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tx2" alignment="BOTTOM_CENTER" layoutX="138.0" layoutY="288.0" prefHeight="36.0" prefWidth="331.0" promptText="Enter The Key" style="-fx-background-color: #d1c9c9;">
+         <font>
+            <Font name="Symbol" size="16.0" />
+         </font>
+      </TextField>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+   </padding>
+</Pane>
